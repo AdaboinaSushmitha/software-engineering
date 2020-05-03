@@ -6,15 +6,37 @@ public class Food
     public Food() {
     	
 	}
+	public static int Food(int itemno,int quantity)
+    	{
+		
+		int price;
+       	 	switch(itemno)
+        	{
+            	case 1:price=quantity*50;
+                	break;
+            	case 2:price=quantity*60;
+                	break;
+            	case 3:price=quantity*70;
+                	break;
+            	case 4:price=quantity*30;
+                	break;
+                default:price=0;
+                		break;
+        	}
+    	
+	return price;
+    	}
 	public static void main(String[] args)
 	{
 		int itemno;
 	    	int quantity;   
 	    	int price;
 		Scanner sc=new Scanner(System.in);
-		System.out.print("Item List:\n1.Chiken Sixty five\n2.Noodles\n3.Biriyani\n4.Dosa\nEnter item no:");
+		System.out.print("Item List:\n1.Idle\n2.Puri \n3.Upma\n4.Vada\nEnter item no:");
 		itemno=sc.nextInt();
 		System.out.print("Enter quantity:");
 		quantity=sc.nextInt();
+		price=Food(itemno,quantity);
+		System.out.println("Price="+price);
 	}
 }
