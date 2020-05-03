@@ -1,0 +1,14 @@
+package project;
+public class Food 
+{
+  
+    public Food() {
+    	
+	}
+	public static void main(String[] args)
+	{
+		int itemno;
+	    	int quantity;   
+	    	int price;
+	}
+}
