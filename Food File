@@ -1,4 +1,5 @@
 package project;
+import java.util.Scanner;
 public class Food 
 {
   
@@ -10,5 +11,10 @@ public class Food
 		int itemno;
 	    	int quantity;   
 	    	int price;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Item List:\n1.Chiken Sixty five\n2.Noodles\n3.Biriyani\n4.Dosa\nEnter item no:");
+		itemno=sc.nextInt();
+		System.out.print("Enter quantity:");
+		quantity=sc.nextInt();
 	}
 }
