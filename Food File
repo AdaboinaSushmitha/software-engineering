@@ -21,7 +21,7 @@ public class Food
             	case 4:price=quantity*30;
                 	break;
                 default:price=0;
-                		break;
+                		break:
         	}
     	
 	return price;
