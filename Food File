@@ -6,8 +6,6 @@ public class Food
     public Food() {
     	
 	}
-	public static int Food(int itemno,int quantity)
-    	{
 		
 		int price;
        	 	switch(itemno)
